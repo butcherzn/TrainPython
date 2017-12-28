@@ -1,3 +1,3 @@
-# Hello Python ---- 人生苦短，我用python
+# Hello Python ----
 
-## 练习python2
+## 1、练习python

@@ -115,16 +115,41 @@ else:
     print u'小于等于8'
 
 # 练习函数，定义函数
+# python 建议使用snake_case，而不是canmal case
 def test_abs(temp_x):
     """This function is used to \
     calculate the absolute value of a numbere"""
     if temp_x < 0:
         return -temp_x
-    else:
-        return temp_x
+    return temp_x
 
 # call the function test_abs
 X = test_abs(-10)
 print 'test_abs -10 %d'%X
 
+# 默认参数
+def test_sqrs(_x, _n=2):
+    """This function"""
+    if _x == 0 or _x == 1:
+        return _x
+    sqr = 1
+    while _n > 0:
+        sqr = sqr * _x
+        _n = _n - 1
+    return sqr
 
+print test_sqrs(4, 2)
+print test_sqrs(4, 3)
+print test_sqrs(4, 1)
+print test_sqrs(4)
+
+# 可变参数 *_x 可变参数，可以输入list和tuple 前面需要添加*
+def calc(*_x):
+    """Thie function is used to calculate ...."""
+    _sum = 0
+    for _temp in _x:
+        _sum = int(_temp) + _sum
+    return _sum
+
+SUMS = [100, 2, 4]
+print calc(*SUMS)
