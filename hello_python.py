@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*-coding: utf-8 -*-
+"""This script created by Joker and \
+be used to tranin python"""
 
 # 练习python
 print 'HelloPython'
@@ -86,9 +88,9 @@ print CLASSMATES
 CLASSMATES.append('D')
 
 # 删除指定位置元素
-temp = CLASSMATES.pop(1)
+TEMP = CLASSMATES.pop(1)
 print CLASSMATES
-print 'temp = %s'%temp
+print 'TEMP = %s'%TEMP
 
 # 添加回去
 CLASSMATES.insert(1, "AA")
@@ -97,10 +99,13 @@ print CLASSMATES
 # 长度
 print len(CLASSMATES)
 
-
-# tuple
+# tuple (A, B)
 CLASSMATES_TUPLE = ('A', 'B', 'C')
 print CLASSMATES_TUPLE
+
+# dict {A:A, B:B}
+CLASSMATES_DICT = {'A':1, 'B':2}
+print CLASSMATES_DICT
 
 # 条件语句, Trailing Whitespace
 A = 10
@@ -108,5 +113,18 @@ if A > 8:
     print u'大于8'
 else:
     print u'小于等于8'
+
+# 练习函数，定义函数
+def test_abs(temp_x):
+    """This function is used to \
+    calculate the absolute value of a numbere"""
+    if temp_x < 0:
+        return -temp_x
+    else:
+        return temp_x
+
+# call the function test_abs
+X = test_abs(-10)
+print 'test_abs -10 %d'%X
 
 
