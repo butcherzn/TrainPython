@@ -10,3 +10,5 @@ print LIST[1:2]
 print LIST[1:3]
 
 # 学习python切片功能
+
+# 修改bug
