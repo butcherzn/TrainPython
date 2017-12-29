@@ -153,3 +153,4 @@ def calc(*_x):
 
 SUMS = [100, 2, 4]
 print calc(*SUMS)
+
